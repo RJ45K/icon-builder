@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <title>Icon Builder</title>
         <link rel=”icon” href=“favicon.ico” sizes="16x16 32x32 48x48">
+        <script>
+            var ua = navigator.userAgent;
+            if ((ua.indexOf('iPhone')>0&&ua.indexOf('iPad')==-1)||ua.indexOf('iPod')>0||(ua.indexOf('Android')>0&&ua.indexOf('Mobile')>0))
+            	{
+            		location.href = '/mobile.html';
+            	}
+        </script>
         <style>
             body {
                 text-align: center;
