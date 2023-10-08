@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Icon Builder</title>
-        <link rel=”icon” href=“favicon.ico”>
+        <link rel=”icon” href=“favicon.ico” sizes="16x16 32x32 48x48">
         <style>
             body {
                 text-align: center;
+                background-color: #eeeeee;
             }
             a {
                 text-decoration: none;
@@ -36,9 +37,47 @@
                 z-index: 10;
                 outline: 0;
             }
+            .firstsample {
+                width: 50%;
+                border: 2px #000000 solid;
+            }
+            .othersample {
+                width: 100px;
+            }
+            .outdiv {
+                width: 50%;
+                border: 2px #000000 solid;
+                margin: 0 auto;
+                background-color: #ffffff;
+            }
+            .indiv {
+                margin: 20px;
+                float: left;
+                background-color: #ffffff;
+            }
+            .aboutdiv {
+                width: 65%;
+                padding: 50px;
+                margin:0 auto;
+                font-size: 16px;
+                border-radius: 30px;
+                border: 2px solid #000000;
+                box-sizing: border-box;
+                box-shadow: 0px 5px 10px #000000;
+                background-color: #ffffff;
+            }
+            .faqdiv {
+                width: 65%;
+                padding: 20px;
+                margin:0 auto;
+                font-size: 16px;
+                border: 2px solid #000000;
+                box-sizing: border-box;
+                background-color: #ffffff;
+            }
         </style>
     </head>
-    <body>
+    <body id="1">
         <br>
         <img src="favicon.ico">
         <h1>Icon Builder</h1>
@@ -49,7 +88,133 @@
         </a>
         <br>
         <br>
-        <br>
         <p>2023 © <a href="https://github.com/rj45k" target="_blank">RJ45K</a></p>
+        <br>
+        <hr id="2">
+        <br>
+        <h1>3つの特徴</h1>
+        <div class="aboutdiv">
+            <h2>1. ドット絵とベクターのいいとこどり。</h2>
+            <h3>正確な位置にお手軽な曲線を。<br>これまでにない全く新しい描画方法です。</h3>
+            <img src="about1.png" height="200">
+            <p>14種類のパネルを並べて画像を作ります。<br>お手軽に、多彩なアイコンを作ることができます。</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="aboutdiv">
+            <h2>2. キレイにエクスポート。</h2>
+            <h3>最小限の手間で、最大限の美しさを。<br>透過処理に困ることはもうありません。</h3>
+            <img src="about2.png" height="300">
+            <p>1マス当たり290px、最大で4640pxのpng画像を生成できます。<br>エクスポート時に背景の透過にも対応しています。</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="aboutdiv">
+            <h2>3. すぐに試せる。</h2>
+            <h3>インストール不要。<br>学習コストも不要。</h3>
+            <img src="about3.png" height="150">
+            <p>起動はiconbuilder.exeを実行するだけ。<br>機能が洗練されているため、すぐに使いこなせるようになります。</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr id="3">
+        <br>
+        <br>
+        <h1>無料でダウンロード｡</h1>
+        <a href="https://drive.google.com/file/d/1PTvaxk1MGEbOGei26AN_DEDjLZk3eC-J/view?usp=drive_link" target="_blank">
+            <button>Download ver1.0 for Windows</button>
+        </a>
+        <br>
+        <br>
+        <br>
+        <hr id="4">
+        <br>
+        <br>
+        <h1>よくある質問</h1>
+        <br>
+        <div class="faqdiv">
+            <h3>Q. 無料で使える？<br>A. 使えます。</h3>
+            <p>本ソフトウェアはフリーウェアです。<br>作成したアイコンは商用利用、配布が可能です。<br>ただし、ソフトウェア本体の二次配布は禁止しています。</p>
+        </div>
+        <br>
+        <div class="faqdiv">
+            <h3>Q. このソフトのアイコンは何？<br>A. 木です。</h3>
+            <p>私がこのソフトを開発して、最初に作ったアイコンをそのまま使用しています。</p>
+        </div>
+        <br>
+        <div class="faqdiv">
+            <h3>Q. 二重跳びできる？<br>A. できません。</h3>
+            <p>はい。</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr id="5">
+        <br>
+        <h1>ギャラリー</h1>
+        <br>
+        <h3>画面説明</h3>
+        <img src="sample0.png" class="firstsample">
+        <h3>1 キャンバス ： ドット絵を打ち込む感覚で、パネルを並べることができます。</h3>
+        <h3>2 新規作成 ： 新しいキャンバスを作ります。サイズは1×1から16×16まで選べます。</h3>
+        <h3>3 保存 ： png形式でエクスポートします。背景を透過するか選べます。</h3>
+        <h3>4 パレット ： 14種類のパネルの中から使用するものを選択します。</h3>
+        <br>
+        <br>
+        <h3>作品</h3>
+        <div class="outdiv">
+            <p>私がIcon Builderを使って作った作品です。<br>作れる物のサンプルとして見てください。</p>
+            <div class="indiv">
+                <img src="sample1.png" class="othersample">
+                <p><b>木</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample2.png" class="othersample">
+                <p><b>人</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample3.png" class="othersample">
+                <p><b>植林</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample4.png" class="othersample">
+                <p><b>保存</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample5.png" class="othersample">
+                <p><b>コーヒー</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample6.png" class="othersample">
+                <p><b>カバン</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample7.png" class="othersample">
+                <p><b>スマホ</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample8.png" class="othersample">
+                <p><b>メール</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample9.png" class="othersample">
+                <p><b>イチョウ</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample10.png" class="othersample">
+                <p><b>パズル</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample11.png" class="othersample">
+                <p><b>ダンベル</b></p>
+            </div>
+            <div class="indiv">
+                <img src="sample12.png" class="othersample">
+                <p><b>東西南北</b></p>
+            </div>
+        </div>
     </body>
 </html>
