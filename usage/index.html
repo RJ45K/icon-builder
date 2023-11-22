@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Icon Builder</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="icon" href="../favicon.ico" sizes="any">
         <link rel="icon" href="../icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -10,31 +11,77 @@
         <link rel="stylesheet" href="../style.css" type="text/css">
     </head>
     <body>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="https://rj45k.github.io/icon-builder/"><div class="notselectedmenu">Home</div></a>
             <a href="https://rj45k.github.io/icon-builder/about/"><div class="notselectedmenu">About</div></a>
             <a href="https://rj45k.github.io/icon-builder/download/"><div class="notselectedmenu">Download</div></a>
-            <div class="selectedmenu">Usage</div>
+            <a tabindex="-1"><div class="selectedmenu">Usage</div></a>
             <a href="https://rj45k.github.io/icon-builder/samples/"><div class="notselectedmenu">Samples</div></a>
         </div>
         <div class="main">
-            <p>操作方法の説明です。※説明は最新バージョンのものです</p>
+            <p>操作方法の説明です。説明は<b>最新バージョン(Ver2.0)</b>のものです。</p>
             <br>
             <hr>
+            <br>
+            <h2>GUI</h2>
+            <p>本ソフトは次のような見た目をしています。</p>
             <br>
             <img src="1.png" height="300"><br>
             <br>
-            <p>パレットでパネルの種類を選んで、キャンバスにドット絵ソフトの要領で打ち込んでください。</p>
-            <p>ボタンは全部で4つあり、左上が「新規作成」、左下が「名前を付けて保存」のボタンです。</p>
-            <p>右上と右下は、パネルの背景をそれぞれ白色と透明色に変えるボタンです。両者のパネルは併用できます。</p>
+            <p>各UIの説明です。</p>
             <br>
-            <img src="2.png" height="150"><br>
+            <img src="2.png" height="300"><br>
             <br>
-            <p>上のようなダイアログが出た場合は、説明に従ってください。</p>
+            <p>「ツールバー」：様々な操作をまとめたメニューです。</p>
+            <p>「キャンバス」：ドット絵のそれとほぼ同じものです。</p>
+            <p>「ボタン」：それぞれ新規作成、上書き保存、パレットの種類を変更するボタンです。</p>
+            <p>「パレット」：キャンバスで塗る図形の種類を選択できます。</p>
+            <br>
+            <p>他にも、ダイアログや設定画面、下にあるステータスバーなどがあります。</p>
             <br>
             <hr>
             <br>
-            <p>後は使いながら慣れていってください。</p>
+            <h2>操作一覧</h2>
+            <p>操作の一覧です。ツールバーやボタン、ショートカットなどで呼び出せます。</p>
+            <br>
+            <img src="3.png" height="300"><br>
+            <br>
+            <h3>ファイルタブ</h3>
+            <p>「新規作成」：新しいキャンバスを、1×1から24×24までの大きさで作成します。＜Ctrl+n＞</p>
+            <p>「上書き保存」：現在のキャンバスを、ファイルに上書き保存します。＜Ctrl+s＞</p>
+            <p>「名前を付けて保存」：現在のキャンバスを、新しいファイルに保存します。</p>
+            <p>「終了」：ウィンドウを閉じます。＜Ctrl+w＞</p>
+            <br>
+            <h3>編集タブ</h3>
+            <p>「透過させない」：パレットの図形の背景の透過を無効にします。</p>
+            <p>「透過させる」：パレットの図形の背景の透過を有効にします。</p>
+            <p>「パネルの選択をリセット」：黒の正方形の図形を選択します。</p>
+            <br>
+            <h3>表示タブ</h3>
+            <p>「拡大」：キャンバスを拡大します。＜Ctrl+上スクロール＞</p>
+            <p>「縮小」：キャンバスを縮小します。＜Ctrl+下スクロール＞</p>
+            <p>「表示をリセット」：キャンバスの移動、ズームをリセットします。＜Ctrl+r＞</p>
+            <p>「表示設定...」：表示の設定画面を開きます。</p>
+            <br>
+            <h3>ヘルプタブ</h3>
+            <p>「ホームページ...」：トップページをブラウザで開きます。</p>
+            <p>「操作方法...」：このページをブラウザで開きます。</p>
+            <p>「バージョン情報...」：バージョン情報を表示します。</p>
+            <br>
+            <h3>マウス操作</h3>
+            <p>マウスの左ボタンで、キャンバスを塗ることができます。</p>
+            <p>マウスの右ボタンでドラッグすると、キャンバスを移動させられます。</p>
+            <br>
+            <hr>
+            <br>
+            <h2>その他</h2>
+            <img src="4.png" height="300"><br>
+            <p><b>旧バージョン(Ver1.x)</b>のGUIです。</p>
+            <p>上書き保存、キャンバスの移動とズーム、表示の設定ができません。</p>
+            <p>それ以外の機能は最新バージョンと同じです。</p>
         </div>
+        <script>
+            document.getElementById("menu").scrollLeft = 300;
+        </script>
     </body>
 </html>
