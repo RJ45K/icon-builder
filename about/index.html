@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Icon Builder</title>
         <link rel="icon" href="../favicon.ico" sizes="any">
         <link rel="icon" href="../icon.svg" type="image/svg+xml">
@@ -10,9 +11,9 @@
         <link rel="stylesheet" href="../style.css" type="text/css">
     </head>
     <body>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="https://rj45k.github.io/icon-builder/"><div class="notselectedmenu">Home</div></a>
-            <div class="selectedmenu">About</div>
+            <a tabindex="-1"><div class="selectedmenu">About</div></a>
             <a href="https://rj45k.github.io/icon-builder/download/"><div class="notselectedmenu">Download</div></a>
             <a href="https://rj45k.github.io/icon-builder/usage/"><div class="notselectedmenu">Usage</div></a>
             <a href="https://rj45k.github.io/icon-builder/samples/"><div class="notselectedmenu">Samples</div></a>
@@ -35,5 +36,8 @@
             <p>インストール不要で、exeファイルを実行するだけで起動できます。</p>
             <p>作成したアイコンはフリーで商用利用できます。</p>
         </div>
+        <script>
+            document.getElementById("menu").scrollLeft = 100;
+        </script>
     </body>
 </html>
