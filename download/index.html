@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Icon Builder</title>
         <link rel="icon" href="../favicon.ico" sizes="any">
         <link rel="icon" href="../icon.svg" type="image/svg+xml">
@@ -10,54 +11,64 @@
         <link rel="stylesheet" href="../style.css" type="text/css">
     </head>
     <body>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="https://rj45k.github.io/icon-builder/"><div class="notselectedmenu">Home</div></a>
             <a href="https://rj45k.github.io/icon-builder/about/"><div class="notselectedmenu">About</div></a>
-            <div class="selectedmenu">Download</div>
+            <a tabindex="-1"><div class="selectedmenu">Download</div></a>
             <a href="https://rj45k.github.io/icon-builder/usage/"><div class="notselectedmenu">Usage</div></a>
             <a href="https://rj45k.github.io/icon-builder/samples/"><div class="notselectedmenu">Samples</div></a>
         </div>
         <div class="main">
-            <h3>最新バージョン</h3>
+            <h3>Ver2.x</h3>
             <br>
             <p>
-                <b>ver1.4</b>　エクスポートで日本語に対応しました　　
-                <a href="https://drive.google.com/file/d/1iMelmJyPv-hB-E7ME3L_kXwpvr1CKHXz/view?usp=sharing" target="_blank">
-                    <button>Download ver1.4 for Windows</button>
+                <b>ver2.0</b>　インターフェースを大幅に更新しました　
+                <a href="https://drive.google.com/file/d/1YZUshlDy1yVwQQbiWlfQYuzX8rap0rph/view?usp=sharing" target="_blank">
+                    <button>Download ver2.0</button>
                 </a>
             </p>
             <br>
             <hr>
             <br>
-            <h3>過去のバージョン</h3>
+            <h3>Ver1.x</h3>
+            <br>
+            <p>
+                <b>ver1.4</b>　エクスポートで日本語に対応しました　　
+                <a href="https://drive.google.com/file/d/1iMelmJyPv-hB-E7ME3L_kXwpvr1CKHXz/view?usp=sharing" target="_blank">
+                    <button>Download ver1.4</button>
+                </a>
+            </p>
             <br>
             <p>
                 <b>ver1.3</b>　ダイアログの動作を改善しました　　　　
                 <a href="https://drive.google.com/file/d/1gNSVhyJUMy8Q8Xshq6cB1tzjzdvoIeXm/view?usp=sharing" target="_blank">
-                    <button>Download ver1.3 for Windows</button>
+                    <button>Download ver1.3</button>
                 </a>
             </p>
             <br>
             <p>
                 <b>ver1.2</b>　透明色と白色の併用に対応しました　　　
                 <a href="https://drive.google.com/file/d/1kYy7ChYb5GgkHmLpzewzwp0gWr_6w6nj/view?usp=sharing" target="_blank">
-                    <button>Download ver1.2 for Windows</button>
+                    <button>Download ver1.2</button>
                 </a>
             </p>
             <br>
             <p>
                 <b>ver1.1</b>　透過の方法を変更しました　　　　　　　
                 <a href="https://drive.google.com/file/d/1LeYhAi833ZUTQkL-l_a3qrbDkaPamc4m/view?usp=sharing" target="_blank">
-                    <button>Download ver1.1 for Windows</button>
+                    <button>Download ver1.1</button>
                 </a>
             </p>
             <br>
             <p>
                 <b>ver1.0</b>　最初のリリースです　　　　　　　　　　
                 <a href="https://drive.google.com/file/d/1PTvaxk1MGEbOGei26AN_DEDjLZk3eC-J/view?usp=sharing" target="_blank">
-                    <button>Download ver1.0 for Windows</button>
+                    <button>Download ver1.0</button>
                 </a>
             </p>
         </div>
+        <script>
+            document.getElementById("menu").scrollLeft = 200;
+        </script>
     </body>
 </html>
