@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Icon Builder</title>
         <link rel="icon" href="../favicon.ico" sizes="any">
         <link rel="icon" href="../icon.svg" type="image/svg+xml">
@@ -10,12 +11,12 @@
         <link rel="stylesheet" href="../style.css" type="text/css">
     </head>
     <body>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="https://rj45k.github.io/icon-builder/"><div class="notselectedmenu">Home</div></a>
             <a href="https://rj45k.github.io/icon-builder/about/"><div class="notselectedmenu">About</div></a>
             <a href="https://rj45k.github.io/icon-builder/download/"><div class="notselectedmenu">Download</div></a>
             <a href="https://rj45k.github.io/icon-builder/usage/"><div class="notselectedmenu">Usage</div></a>
-            <div class="selectedmenu">Samples</div>
+            <a tabindex="-1"><div class="selectedmenu">Samples</div></a>
         </div>
         <div class="main">
             <p>以下に、実際に私がIconBuilderを使って作ったものを並べています。<br>作れる物のサンプルとして見てみてください。</p>
@@ -38,5 +39,8 @@
             <p><img src="3-1.png" height="150"></p>
             <p>本ソフトで作った画像を基に、数字フォントを作りました</p>
         </div>
+        <script>
+            document.getElementById("menu").scrollLeft = 400;
+        </script>
     </body>
 </html>
